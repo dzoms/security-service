@@ -26,7 +26,7 @@ public class WebSecurityConfig {
                 .oauth2ResourceServer(oauth2ResourceServer -> oauth2ResourceServer.jwt(
                         Customizer.withDefaults()))
                 .sessionManagement(sessionManagement -> sessionManagement.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .cors(Customizer.withDefaults())
+                //.cors(Customizer.withDefaults())
                 .build();
     }
 }
